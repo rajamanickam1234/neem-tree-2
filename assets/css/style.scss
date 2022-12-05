@@ -34,13 +34,29 @@ a {
 }
 
 .btn-warning {
-	border-radius: 23px;
+	border-radius: 8px;
 	background-color: $btn-bg;
 	color: $green;
+    padding: 10px 40px;
 	&:focus {
 		box-shadow: none;
 	}
 }
+.btn-primary{
+    border-radius: 8px;
+	background-color: $buleclr;
+	color: $white;
+    padding: 10px 40px;
+	&:focus {
+		box-shadow: none;
+	}
+    &:hover{
+        background-color: $buleclr;
+    }
+}
+
+
+
 header {
     background-color: $bgbule;
 	nav {
@@ -115,10 +131,11 @@ header {
             .form-control {
                 display: inline-block;
                 width: 40%;
+                height: 45px;
             }
         }
         img{
-            width: 80%;
+            width: 70%;
             /* height: 100%; */
             position: absolute;
             top: 0;
@@ -150,12 +167,12 @@ header {
     padding: 48px 0;
     .grp-img{
         display: flex;
-        gap: 25px;
+        gap: 50px;
         align-items: center;
     }
 }
 .solution{
-    padding: 7rem 0;
+    padding: 6rem 0;
     background-color: $solubg;
     .solution-desk{
         justify-content: space-between;
@@ -164,7 +181,7 @@ header {
                 font-size: 40px;
                 line-height: 51px;
                 font-family: $Rajdhani-Medium;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
             }
             p{
                 font-size: 20px;
@@ -177,6 +194,7 @@ header {
             .solu-content{
                 background-color: $white;
                 padding: 15px 20px;
+                border-radius: 10px;
                 // margin-bottom: 20px;
                 img{
                     width: 80px;
@@ -204,12 +222,55 @@ header {
         }
         h2{
             font-size: 40px;
-            line-height: 50px;
+            line-height: 46px;
             font-family: $Rajdhani-Medium;
         }
     }
+    .slick-slide img{
+        width: 94%;
+    }
+    .parent-hover{
+        &:hover{
+            .visible{
+                display: block;
+            }
+        }
+    }
+    .visible{
+        display: none;
+    }
+    .slick-prev:before{
+        background-image: url(../images/icon/circleright-arrow.png);
+        background-size: cover;
+        color: $white;
+    }
     #slider{
-     
+        .hover-box{
+            position: absolute;
+            bottom: 0;
+            padding: 30px;
+            h3{
+                color: $white;
+                font-family: $Rajdhani-Bold;
+                font-size: 40px;
+                line-height: 46px;
+            }
+           h6{
+                color: $white;
+                font-family: $Rajdhani-Medium;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            p{
+                color: $white;
+                font-family: $Rajdhani-Regular;
+                font-size: 20px;
+                line-height: 26px;
+            }
+            .arrow{
+                width: 5%;
+            }
+        }
     }
 }
 .blogs{
@@ -232,7 +293,7 @@ header {
         // align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 40px 60px;
+        padding: 40px 60px 0;
         .blogs-colms{
             border-right:1px solid $graybg ;
             h1{
@@ -249,7 +310,7 @@ header {
     }
 }
 .expertise{
-    padding: 7rem 0;
+    padding: 6rem 0 2rem;
     background-color: $bgbule;
     color: $white;
     .expertise-content{
@@ -273,12 +334,16 @@ header {
             font-size: 26px;
             line-height: 30px;
             font-family: $Rajdhani-Medium;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 14px;
         }
         p{
             color: $expretisespan !important;
             font-size: 18px;
             line-height: 23px;
             font-family: $Rajdhani-Medium;
+            margin-bottom: 26px;
         }
     }
 }
@@ -289,20 +354,41 @@ header {
         justify-content: space-between;
     }
 }
-// .our-company{
-//     padding: 7rem 0;
-//     #company{
-//         display: flex;
-//         .ceo{
-//             position: relative;
-//         }
-//         .play{
-//             position: absolute;
-//             top: 43%;
-//             left: 36%;
-//         }
-//     }          
-//     }
+.our-company{
+    background-color: $solubg;
+    padding: 120px 0; 
+    .slick-initialized .slick-slide {
+        display: flex;
+    }    
+    .slider-text{
+        p{
+            color: $paraclr;
+            font-size: 20px;
+            line-height: 26px;
+            font-family: $Rajdhani-Medium;
+        }
+        h4{
+            color: $buleclr;
+            font-size: 30px;
+            line-height: 36px;
+            font-family: $Rajdhani-Bold;
+        }
+        h5{
+            color: $ceoclr;
+            font-size: 20px;
+            line-height: 26px;
+            font-family: $Rajdhani-SemiBold;
+        }
+    }   
+    .play-center{
+        img{
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+    } 
+}
 .cases{
     padding: 7rem 0;
     background-color: $bgbule;
@@ -332,7 +418,7 @@ header {
             line-height: 33px;
             font-family: $Rajdhani-Regular;
             color: $white;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         p{
             font-size: 18px;
@@ -350,7 +436,7 @@ header {
 .technology{
     padding: 7rem 0;
     img{
-        width: 100%;
+        width: 95%;
     }
         h2{
             font-size: 40px;
