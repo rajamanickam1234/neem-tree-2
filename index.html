@@ -75,10 +75,10 @@
             <img src="./assets/images/hero-img/Ribble.png" alt="">
         </div>
     </section>
-    <section class="blogs">
+    <section class="blogs" id="counter">
         <div class="container">
             <div class="blog-content">
-                <h2>Lorem ipsum is placeholder text<br> commonly <span class="bule-heading">used in the graphic,</span>
+                <h2 class="mb-3">Lorem ipsum is placeholder text<br> commonly <span class="bule-heading">used in the graphic,</span>
                     publishing<br> industries for previewing.</h2>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br>eu fugiat nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt
@@ -89,19 +89,19 @@
             <div class="row blog-colms">
                 <div class="col-md-4 mb-5 md-lg-0">
                     <div class="blogs-colms">
-                        <h1>4.5/5</h1>
+                        <h1 class="counter">200</h1>
                         <p>APP EXCHANGE<br> RATING</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5 md-lg-0">
                     <div class="blogs-colms">
-                        <h1>200+</h1>
+                        <h1 class="counter">200</h1>
                         <p>CERTIFICATES REGISTERED <br> ACCOUNTS</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5 md-lg-0">
                     <div class="blogs-colms">
-                        <h1>100+</h1>
+                        <h1 class="counter">100</h1>
                         <p>CUSTOMERS REGISTERED <br> ACCOUNTS</p>
                     </div>
                 </div>
@@ -111,39 +111,39 @@
     <section class="solution">
         <div class="container">
             <div class="row solution-desk">
-                <div class="col-md-4 mb-5 md-lg-0">
+                <div class="col-md-4 md-lg-0">
                     <div class="solution-content">
-                        <h2>Solutions <span class="bule-heading">for thriving brand</span> communities</h2>
+                        <h2 class="mb-2">Solutions <span class="bule-heading">for thriving brand</span> communities</h2>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             Mollit.</p>
-                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-primary">Learn More</button>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5  md-lg-0 solu-box">
+                <div class="col-md-4 md-lg-0 solu-box">
                     <div class="solu-content mb-4 ">
-                        <img src="./assets/images/solution-img/solution-icon1.svg" alt="">
-                        <p class="para1"><b>Consulting</b> and <br> Advisory Services</p>
+                        <img class="mb-3" src="./assets/images/solution-img/solution-icon1.svg" alt="">
+                        <p class="para1 mb-2"><b>Consulting</b> and <br> Advisory Services</p>
                         <p class="para2">Salesforce customation is the key to long-term success, that's why it's so
                             importent that your salesforce</p>
                     </div>
                     <div class="solu-content">
-                        <img src="./assets/images/solution-img/solution-icon2.svg" alt="image">
-                        <p class="para1"><b>Consulting</b> and <br> Advisory Services</p>
+                        <img class="mb-3" src="./assets/images/solution-img/solution-icon2.svg" alt="image">
+                        <p class="para1 mb-2"><b>Consulting</b> and <br> Advisory Services</p>
                         <p class="para2">Salesforce customation is the key to long-term success, that's why it's so
                             importent that your salesforce</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5 md-lg-0 solu-box">
+                <div class="col-md-4 md-lg-0 solu-box">
                     <div class="solu-content mb-4">
-                        <img src="./assets/images/solution-img/solution-icon3.svg" alt="image">
-                        <p class="para1"><b>Consulting</b> and <br> Advisory Services</p>
+                        <img class="mb-3" src="./assets/images/solution-img/solution-icon3.svg" alt="image">
+                        <p class="para1 mb-2"><b>Consulting</b> and <br> Advisory Services</p>
                         <p class="para2">Salesforce customation is the key to long-term success, that's why it's so
                             importent that your salesforce</p>
                     </div>
                     <div class="solu-content">
-                        <img src="./assets/images/solution-img/solution-icon4.svg" alt="image">
-                        <p class="para1"><b>Consulting</b> and <br> Advisory Services</p>
+                        <img class="mb-3" src="./assets/images/solution-img/solution-icon4.svg" alt="image">
+                        <p class="para1 mb-2"><b>Consulting</b> and <br> Advisory Services</p>
                         <p class="para2">Salesforce customation is the key to long-term success, that's why it's so
                             importent that your salesforce</p>
                     </div>
@@ -154,45 +154,55 @@
     <section class="industry">
         <div class="container">
             <div class="industry-content mb-5">
-                <p>INDUSTRIES</p>
+                <p class="mb-3">INDUSTRIES</p>
                 <h2 class="col-6">Placeholder text commonly <span class="bule-heading">used in the graphic,
                         publishing</span> industries for previewing.</h2>
             </div>
-            <div id="slider">
-                <div class="row">
-                    <div class="col-md-4 ">
+            <div>
+                <div class="row" id="slider">
+                    <div class="col-md-3 position-relative parent-hover">
                         <img src="./assets/images/card-img/books.png" alt="books">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 ">
+                        <div class="hover-box">
+                            <h3>Education</h3>
+                            <div class="visible">
+                                <p class="mb-2">Salesforce customisation is the key to long-term success.</p>
+                                <h6 class="d-flex align-items-center">Learn More <img class="arrow ms-2"
+                                        src="./assets/images/icon/left-arrow.png" alt="left-arrow" /></h6>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3 position-relative parent-hover">
                         <img src="./assets/images/card-img/doctor.png" alt="">
-                        <h3></h3>
+                        <div class="hover-box">
+                            <h3>Healthcare</h3>
+                            <div class="visible">
+                                <p class="mb-2">Salesforce customisation is the key to long-term success.</p>
+                                <h6 class="d-flex align-items-center">Learn More <img class="arrow ms-2"
+                                        src="./assets/images/icon/left-arrow.png" alt="left-arrow" /></h6>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 ">
-                        <img class="mx-4" src="./assets/images/card-img/tap-explain.png" alt="">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 ">
-                        <img src="./assets/images/card-img/books.png" alt="books">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/doctor.png" alt="">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3 position-relative parent-hover">
                         <img src="./assets/images/card-img/tap-explain.png" alt="">
-                        <h3></h3>
+                        <div class="hover-box">
+                            <h3>Financial Services</h3>
+                            <div class="visible">
+                                <p class="mb-2">Salesforce customisation is the key to long-term success.</p>
+                                <h6 class="d-flex align-items-center">Learn More <img class="arrow ms-2"
+                                        src="./assets/images/icon/left-arrow.png" alt="left-arrow" /></h6>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-md-3 position-relative parent-hover">
+                        <img src="./assets/images/card-img/books.png" alt="books">
+                        <div class="hover-box">
+                            <h3>Education</h3>
+                            <div class="visible">
+                                <p class="mb-2">Salesforce customisation is the key to long-term success.</p>
+                                <h6 class="d-flex align-items-center">Learn More <img class="arrow ms-2"
+                                        src="./assets/images/icon/left-arrow.png" alt="left-arrow" /></h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,56 +217,56 @@
             <div class="row mt-5">
                 <div class="col-md-4">
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/graph.png" alt="graph" />Commerce</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/graph.png" alt="graph" />Commerce</h3>
                         <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/graph.png" alt="graph" />Blockchain</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/graph.png" alt="graph" />Blockchain</h3>
                         <p>Ut enim ad minim veniam, quis <br> nostrud exercitation.</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/govet-icon.png" alt="govet" />Real Estate</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/govet-icon.png" alt="govet" />Real Estate</h3>
                         <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/govet-icon.png" alt="govet" />Business</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/govet-icon.png" alt="govet" />Business</h3>
                         <p>Ut enim ad minim veniam, quis <br> nostrud exercitation.</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/govet-icon.png" alt="" />Products</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/govet-icon.png" alt="" />Products</h3>
                         <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/helloence.png" alt="govet" />Blockchain</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/helloence.png" alt="govet" />Blockchain</h3>
                         <p>Ut enim ad minim veniam, quis <br> nostrud exercitation.</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/helloence.png" alt="helloence" />Marketing</h3>
+                        <h3><img class="me-2" src="./assets/images/icon/helloence.png" alt="helloence" />Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                     <div class="box-cotent mb-5">
-                        <h3><img class="me-3" src="./assets/images/icon/helloence.png" alt="helloence" />Real Estate
+                        <h3><img class="me-2" src="./assets/images/icon/helloence.png" alt="helloence" />Real Estate
                         </h3>
                         <p>Ut enim ad minim veniam, quis <br> nostrud exercitation.</p>
-                        <a href="#" class="d-flex align-items-center">Learn More <img
+                        <a href="#" class="d-flex align-items-center">Learn More <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                 </div>
@@ -284,40 +294,66 @@
             </div>
         </div>
     </section>
-    <!-- <section class="container our-company">
-        <div id="company">
-            <div class="content">
-                <img class="mb-5" src="./assets/images/logo/slide-logo.png" alt="">
-                <p class="mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p class="mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint Occaecat"</p>
-                <h2 class="mb-2">Rajesh Kanna</h2>
-                <span>CEO, MindzMap, India</span>
-            </div>
-            <div class="ceo">
-                <img src="./assets/images/solution-img/silide-img1.png" alt="">
-                <img class="play" src="./assets/images/icon/play.svg" alt="">
-            </div>
-            <div class="ceo">
-                <img class="mx-4" src="./assets/images/solution-img/slide-img2.png" alt="">
-                <img class="play" src="./assets/images/icon/play.svg" alt="">
-            </div>
-            <div class="content">
-                <img class="mb-5" src="./assets/images/logo/slide-logo.png" alt="">
-                <p class="mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p class="mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint Occaecat"</p>
-                <h2 class="mb-2">Rajesh Kanna</h2>
-                <span>CEO, MindzMap, India</span>
-            </div>
-            <div class="ceo">
-                <img src="./assets/images/solution-img/silide-img1.png" alt="">
-                <img class="play" src="./assets/images/icon/play.svg" alt="">
-            </div>
-            <div class="ceo">
-                <img class="mx-4" src="./assets/images/solution-img/slide-img2.png" alt="">
-                <img class="play" src="./assets/images/icon/play.svg" alt="">
+    <section class="our-company">
+        <div class="container">
+            <div id="company">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="slider-text">
+                            <img class="mb-5" src="./assets/images/logo/slide-logo.png" alt="slide-logo" />
+                            <p class="mb-4 col-10">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip
+                                ex ea commodo consequat.</p>
+                            <p class="mb-5 col-10">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla
+                                pariatur.voluptate velit esse cillum dolore eu
+                                Excepteur sint Occaecat"</p>
+                            <h4 class="mb-1">Rajesh Kanna</h4>
+                            <h5>CEO, MindzMap, India</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="position-relative">
+                            <img src="./assets/images/solution-img/silide-img1.png" alt="silide-img1" />
+                            <div class="play-center">
+                                <img src="./assets/images/icon/play.svg" alt="play" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="slider-text">
+                            <img class="mb-5" src="./assets/images/logo/slide-logo.png" alt="slide-logo" />
+                            <p class="mb-4 col-10">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip
+                                ex ea commodo consequat.</p>
+                            <p class="mb-5 col-10">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla
+                                pariatur.voluptate velit esse cillum dolore eu
+                                Excepteur sint Occaecat"</p>
+                            <h4 class="mb-1">Rajesh Kanna</h4>
+                            <h5>CEO, MindzMap, India</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="position-relative">
+                            <img src="./assets/images/solution-img/silide-img1.png" alt="silide-img1" />
+                            <div class="play-center">
+                                <img src="./assets/images/icon/play.svg" alt="play" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="cases">
         <div class="container">
             <div class="cases-content">
@@ -332,7 +368,7 @@
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.</p>
-                        <a href="#" class="d-flex align-items-center">Questions? Call us at 00800 7253 3333 <img
+                        <a href="#" class="d-flex align-items-center">Questions? Call us at 00800 7253 3333 <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                 </div>
@@ -343,7 +379,7 @@
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.</p>
-                        <a href="#" class="d-flex align-items-center">Questions? Call us at 00800 7253 3333 <img
+                        <a href="#" class="d-flex align-items-center">Questions? Call us at 00800 7253 3333 <img class="ms-2"
                                 src="./assets/images/icon/left-arrow.png" alt="arrow"></a>
                     </div>
                 </div>
@@ -353,69 +389,57 @@
     <section class="technology">
         <div class="container">
             <div class="tech-content">
-                <h2 class="mb-4">Blog</h2>
-                <p>Exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor
+                <h2 class="mb-3">Blog</h2>
+                <p class="mb-4">Exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor
                     incididunt ut labore et dolore.</p>
             </div>
-            <div id="card-slide">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/class.png" alt="">
+            <div id="card-slide" class="row">
+                <div class="col-md-3">
+                    <img src="./assets/images/card-img/class.png" alt="class" />
+                    <div class="pe-3">
                         <span>How It Works</span>
                         <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul>
-                            <li>3 days ago</li>
-                            <li>8 min read</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/technics.png" alt="">
-                        <span>How It Works</span>
-                        <h2>Aute irure dolor in reprehenderit in voluptatem velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul>
-                            <li>3 days ago</li>
-                            <li>8 min read</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/saleforce.png" alt="">
-                        <span>How It Works</span>
-                        <h2>Irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul>
-                            <li>3 days ago</li>
-                            <li>8 min read</li>
-                        </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
+                    <ul>
+                        <li>3 days ago</li>
+                        <li>8 min read</li>
+                    </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/class.png" alt="">
-                        <span>How It Works</span>
-                        <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul>
-                            <li>3 days ago</li>
-                            <li>8 min read</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/images/card-img/technics.png" alt="">
+                <div class="col-md-3">
+                    <img src="./assets/images/card-img/technics.png" alt="">
+                    <div class="pe-3">
                         <span>How It Works</span>
                         <h2>Aute irure dolor in reprehenderit in voluptatem velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam.</p>
                         <ul>
                             <li>3 days ago</li>
                             <li>8 min read</li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-3">
                         <img src="./assets/images/card-img/saleforce.png" alt="">
+                        <div class="pe-3">
+                            <span>How It Works</span>
+                            <h2>Irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam.</p>
+                        <ul>
+                            <li>3 days ago</li>
+                            <li>8 min read</li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="./assets/images/card-img/class.png" alt="">
+                    <div class="pe-3">
                         <span>How It Works</span>
-                        <h2>Irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam.</p>
                         <ul>
                             <li>3 days ago</li>
                             <li>8 min read</li>
