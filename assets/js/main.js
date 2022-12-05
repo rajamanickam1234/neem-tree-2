@@ -87,11 +87,13 @@ $('#slider').slick({
     ]
   });
 
-  $('#card-slide').slick({
+  $('#slider').slick({
     dots: true,
+    arrows:true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay:true,  
     responsive: [
         {
